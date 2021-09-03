@@ -1,0 +1,28 @@
+<div class="main">
+  <div>
+  </div>
+  <div class="main-style">
+    <div class="card-div">
+      <mat-card>
+        <h3>Add Device</h3>
+        <mat-spinner *ngIf="isLoading"></mat-spinner>
+        <form (submit)="onSaveDevice(deviceForm)" #deviceForm="ngForm" *ngIf="!isLoading">
+          <mat-form-field>
+            <input matInput name="deviceName" ngModel type="text" placeholder="Enter device name" #deviceInput="ngModel" required>
+            <mat-error *ngIf="deviceInput.invalid">Please enter valid device name.</mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <input type="text" name="latitude" ngModel matInput placeholder="Enter latitude" #latitudeInput="ngModel" required>
+            <mat-error *ngIf="latitudeInput.invalid">Please enter valid latitude.</mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <input type="text" name="longitude" ngModel matInput placeholder="Enter longitude" #longitudeInput="ngModel" required>
+            <mat-error *ngIf="longitudeInput.invalid">Please enter valid latitude.</mat-error>
+          </mat-form-field>
+          <button mat-raised-button class="btn" type="submit">Proceed</button>
+        </form>
+      </mat-card>
+    </div>
+  </div>
+</div>
+

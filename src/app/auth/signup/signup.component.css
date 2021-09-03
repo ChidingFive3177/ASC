@@ -1,0 +1,82 @@
+mat-form-field{
+  width: 100%;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+body{
+  background-color: rebeccapurple;
+}
+
+img{
+  width: 200px;
+}
+
+
+#mat-button-grey{
+  color: grey;
+}
+
+.img-div{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hoodini-style{
+  display: block;
+}
+
+app-root{
+  background-image: url(/assets/image/register-image.png);
+  background-repeat: repeat;
+}
+
+.main{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .main-right{
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+} */
+
+.mat-button-register{
+  padding: 0px;
+}
+
+.footer{
+  flex: auto
+}
+
+.footer-forget-password{
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+.footer-register{
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+.btn{
+  width: 100%;
+  background-color: #c53e6c;
+  color: white
+}
+.rakuten-div{
+text-align: center;
+margin-top: 15px;
+}
+.rakuten-div-intra{
+  margin-top: 25px;
+  color: rgb(248, 117, 139);
+}

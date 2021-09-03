@@ -1,0 +1,26 @@
+<div class="main">
+  <div>
+  </div>
+  <div class="main-style">
+    <div class="img-div">
+      <img src="/assets/image/Rakuten-Logo.png">
+    </div>
+    <div class="card-div">
+      <mat-card>
+        <h3>Register</h3>
+        <mat-spinner *ngIf="isLoading"></mat-spinner>
+        <form (submit)="onSignup(signupForm)" #signupForm="ngForm" *ngIf="!isLoading">
+          <mat-form-field>
+            <input matInput name="email" ngModel type="email" placeholder="E-Mail" #emailInput="ngModel" required email>
+            <mat-error *ngIf="emailInput.invalid">Please enter a valid email.</mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <input type="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"  title="Password should be minimum eight characters, at least one letter and one number" ngModel matInput placeholder="Password" #passwordInput="ngModel" required>
+            <mat-error *ngIf="passwordInput.invalid">Please enter a valid password.</mat-error>
+          </mat-form-field>
+          <button mat-raised-button class="btn" type="submit">Signup</button>
+        </form>
+      </mat-card>
+    </div>
+  </div>
+</div>
